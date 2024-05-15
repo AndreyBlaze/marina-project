@@ -1,0 +1,71 @@
+@media (mix-width: 1920px) {
+    .header-wrapper {
+        max-width: 67.6%;
+    }
+}
+
+.header {
+    width: 100%;
+    border-bottom: 0.50px solid #e3e3e3;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 90%;
+    width: inherit;
+}
+
+.logo {
+    width: 158px;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    width: inherit;
+    max-width: 716px;
+}
+
+.link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #282828;
+    text-decoration: none;
+}
+
+.tel-link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.tel-link__phone {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+
+.tel-link__whatsapp {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #199e20;
+}
