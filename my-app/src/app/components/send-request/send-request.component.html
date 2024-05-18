@@ -4,12 +4,12 @@
     ваши пожелания и бюджет. Вы получите 3 варианта
     тура в течении одного часа по актуальным ценам с
     гарантией минимальной стоимости.</span>
-    <form class="request-form">
-      <input type="text" class="input" placeholder="Имя">
-      <input type="tel" class="input" placeholder="+7">
-      <input type="email" class="input" placeholder="E-mail">
+    <form class="request-form" [formGroup]="form">
+      <input type="text" class="input" placeholder="Имя" formControlName="name">
+      <input type="tel" class="input" placeholder="+7" formControlName="phone">
+      <input type="email" class="input" placeholder="E-mail" formControlName="email">
     </form>
-    <button class="submit">
+    <button class="submit" (click)="send()">
       Отправить заявку
       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_2012_94)">

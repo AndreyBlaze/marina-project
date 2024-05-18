@@ -324,3 +324,106 @@ app-send-request {
   gap: 150px;
   align-items: center;
 }
+
+.contacts-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 220px;
+  align-items: center;
+}
+
+.sec-desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #000;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.contact-list-item {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #272727;
+}
+
+.map-sec {
+  margin-top: 220px;
+  display: flex;
+  gap: 250px;
+  margin-bottom: 100px;
+}
+
+.map-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+}
+
+.whatsapp {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #199e20;
+}
+
+.map-sec-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000;
+}
+
+.map-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.map-contacts-list-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+app-map {
+  width: 100%;
+}
