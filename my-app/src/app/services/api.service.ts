@@ -11,4 +11,8 @@ export class ApiService {
   sendRequest(data: {phone: string, email: string, name: string}) {
     return this.http.post<{state: boolean}>('http://localhost:3000/send-request', data);
   }
+
+  setEducationTariff(data: {phone: string, email: string, name: string, tariff: string}) {
+    return this.http.post<{state: boolean}>('http://localhost:3000/send-tariff', data);
+  }
 }

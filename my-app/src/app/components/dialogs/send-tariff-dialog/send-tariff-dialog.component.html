@@ -1,0 +1,11 @@
+<div class="form-container">
+  <h2 class="sec-title">Заявка на обучение</h2>
+  <span class="sec-desc">С вами свяжется наш travel консультант и обсудит
+    особенности программы обучения</span>
+  <form class="request-form" [formGroup]="form">
+    <input type="text" class="input" placeholder="Имя" formControlName="name">
+    <input type="tel" class="input" placeholder="+7" formControlName="phone">
+    <input type="email" class="input" placeholder="E-mail" formControlName="email">
+  </form>
+  <button class="submit" (click)="send()">Отправить</button>
+</div>
