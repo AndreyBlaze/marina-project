@@ -6,7 +6,7 @@
         <span class="desc">Начни зарабатывать от 30 000 до 150 000 ₽ на путешествиях 
           уже во время обучения, уделяя туризму всего 2–3 часа в день</span>
       </div>
-      <button class="get-tour">
+      <button class="get-tour" (click)="scroller.scrollToAnchor('tariffs')">
         Принять участие
         <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_2012_94)">
@@ -136,7 +136,7 @@
     </div>
     <img src="assets/images/belyaeva.png" alt="" class="example-img">
   </section>
-  <section class="tariffs-sec">
+  <section class="tariffs-sec" id="tariffs">
     <div class="tariffs">
       <div class="tariff black">
         <div class="tariff-title-container">

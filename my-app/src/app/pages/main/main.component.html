@@ -2,9 +2,9 @@
   <section class="first">
     <div class="title-container">
       <h1 class="title">А какой тур подойдёт именно вам?</h1>
-      <span class="desc">Пройди мини-тест и получите самые выгодные предложения прямо сейчас!</span>
+      <!-- <span class="desc">Пройди мини-тест и получите самые выгодные предложения прямо сейчас!</span> -->
     </div>
-    <button class="get-tour">
+    <button class="get-tour" (click)="scroller.scrollToAnchor('send-form')">
       Подобрать тур
       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_2012_94)">
@@ -143,7 +143,7 @@
     </div>
   </section>
   <section class="request-sec">
-    <app-send-request></app-send-request>
+    <app-send-request id="send-form"></app-send-request>
   </section>
   <section class="reviews-sec">
     <h2 class="sec-title">Отзывы наших туристов</h2>

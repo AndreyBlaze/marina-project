@@ -24,7 +24,7 @@ app.post('/send-request', async (req, res) => {
   try {
     const info = await transporter.sendMail({
       from: 'info@qird.ru', // sender address
-      to: "feand20041102@gmail.com", // list of receivers
+      to: "marina_chistyakova2003@mail.ru", // list of receivers
       subject: "Новая заявка на расчет стоимости тура!", // Subject line
       text: `Имя: ${req.body.name}\nТелефон: ${req.body.phone}\nEmail: ${req.body.email}`, // plain text body
     });
@@ -40,7 +40,7 @@ app.post('/send-tariff', async (req, res) => {
   try {
     const info = await transporter.sendMail({
       from: 'info@qird.ru', // sender address
-      to: "feand20041102@gmail.com", // list of receivers
+      to: "marina_chistyakova2003@mail.ru", // list of receivers
       subject: "Новая заявка на обучение!", // Subject line
       text: `Имя: ${req.body.name}\nТелефон: ${req.body.phone}\nEmail: ${req.body.email}\nТариф: ${req.body.tariff}`, // plain text body
     });
